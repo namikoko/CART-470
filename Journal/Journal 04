@@ -1,0 +1,55 @@
+Last class, we went to meet Nadia at her studio to talk more about the project and where she wants to take it.
+Unfortunately, there was a mix-up with the schedule and she wasn't there when we arrived. 
+Even though we couldn't have the conversation we planned, the visit wasn't a total loss.
+We were able to get a sample of her ceramic pearls, which we'll use for testing. Most of the colours are hues of Blues and greens.
+The plan is to see whether a Raspberry Pi can detect the colours of the beads, and then connect that colour information to sound. 
+That way, the ceramic piece itself becomes the "input" that triggers the voice or music.
+
+Since it's reading week, we split the work so each of us could explore a different part of the idea:
+
+Pottery 3D printer: Some team members are looking into clay 3D printing. This was new to me.
+I didn't know printers could extrude clay, so I'm curious to see what they find and whether it could be used to make beads with specificshapes or textures.
+Moreso, since no one in the team has ever used this technology, I am unsure if it is wise to use it at this time, as we are wanting to showcase a final product.
+Last class I asked the team if they wanted to produce something concrete or they wanted to lean into exploration.
+It seems that most of the team wants to explore new mediums.
+
+Raspberry Pi colour detection: Other members are testing whether the Pi, using a camera or colour sensor,
+can reliably read the colours of Nadia's ceramic pearls.
+
+Sound through MIDI (my part): I was in charge of figuring out how colour could be connected to sound using MIDI instruments.
+
+My research: colour and sound through MIDI
+Why MIDI? MIDI doesn't carry actual audio. It sends instructions like "play this note, this loud, for this long.
+" That makes it a good bridge between the colour detection and the sound. The Raspberry Pi only needs to send a simple message, and a software instrument plays the sound.
+Each MIDI note is a number from 0 to 127, and each one has a velocity (how hard the note is played) from 0 to 127. That makes it easy to map numbers from colour data onto it.
+
+A possible mapping system: The simplest approach I found is to use HSB (hue, saturation, brightness) values instead of RGB, because they line up well with musical qualities:
+
+Hue (the colour itself, 0–360°)
+Pitch / note
+EG : Divide the colour wheel into 12 sections of 30° each, one for each note of the chromatic scale
+
+Saturation (how intense the colour is)
+Velocity / volume
+EG : A vivid bead plays louder, a muted one plays softer
+
+Brightness (light or dark)
+Octave
+EG : Light colours play higher, dark colours play lower
+
+Connecting it to Nadia's audio: The idea I mentioned in my last journal, converting the recording into a MIDI sequence, 
+is possible with existing tools. Ableton Live has a "Convert Melody to MIDI" function, and Spotify has a free open-source tool called Basic Pitch
+that turns audio recordings into MIDI notes. Once the melody from the recording is in MIDI form, each note could be assigned a colour. 
+The tapestry of beads could then be "read" like a score, or a bead's colour could trigger the matching part of the song.
+
+Technical pipeline (first idea):
+A camera or colour sensor on the Raspberry Pi reads the bead's colour. A camera would use OpenCV in Python.
+A sensor like the TCS34725 is another option.
+A Python script converts the RGB reading to HSB and maps it to a MIDI note.
+The mido Python library sends the MIDI message.
+A software instrument or DAW (GarageBand, Ableton, etc.) plays the sound.
+
+Next steps
+Share my findings with the team and combine them with the Raspberry Pi colour tests.
+Try a small test: map a few colours to notes and see what it would sound like and get 
+feedback from Nadiya
