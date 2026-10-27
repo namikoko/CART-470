@@ -1,0 +1,45 @@
+This week we focused on building the first physical prototype and testing colour detection. 
+The 3D-printed enclosure was printed on Friday. Before printing, we had to make sure the electronics would fit inside, 
+so we shared the Arduino's dimensions (68.6 mm × 53.4 mm) with Sophie, who modelled the enclosure and posted it in our Google Doc for feedback.
+We first tested with a breadboard, but the colour sensor we're using now connects directly to the Arduino without one. 
+That helped, because the enclosure is small and a breadboard wouldn't have fit. The final setup is just the Arduino and the colour sensor
+inside the printed case.
+
+Testing colour detection
+
+On Monday, the team met at 4 pm outside the computation lab to put everything together and test it. there were two printed shapes:
+a handheld scanner with a rounded, ridged form that you hold over a surface
+a flat box with a small opening on top where the colour sensor sits
+Both were connected to a laptop by USB so we could read the sensor's values from the Arduino in real time. 
+To test, the team held the scanner over a phone screen showing solid colours, and checked whether the sensor's readings matched. 
+Using a phone screen was useful because it gave us clean, consistent colours before trying it on the actual ceramic beads.
+
+Ceramic surfaces are glossy and uneven, so they will probably be harder to read.
+Terence was working on getting the sensor to recognize a consistent pattern for each colour, videos were recorded  of the tests for documentation.
+Testing the colour sensor with the 3D-printed enclosure
+Holding the scanner made me think about how the audience will interact with the final piece. 
+
+The shape matters: it needs to feel natural to hold, and it has to sit at the right distance from the bead for the sensor to read it accurately.
+Communication with Nadia
+We had another miscommunication with Nadia this week. 
+She messaged Terence asking if we were meeting that day, since she would be in the EV building around 12–12:30. 
+Terence had been sick and thought the rest of us had already met with her the day before, but she hadn't heard from anyone. 
+In the end, she confirmed we would see each other in class for our midterm presentations.
+
+This is the second time scheduling has caused a problem, and it's frustrating because time with the client is limited.
+I think we need one person in charge of client communication, and we should confirm the date, time, and place in writing before every meeting.
+
+Reflection
+
+Most of the challenges this week weren't technical. They were about communication and timing.
+Still, it felt good to finally have something physical to test. 
+Once you have to fit real components into an object, you start thinking about size, how people will hold it,
+and how it connects to Nadia's ceramics. Now we'll have something concrete to show her at the midterm instead of only ideas.
+
+Next steps
+
+Present the prototype at the midterm and get Nadia's feedback.
+Test the sensor on the actual ceramic beads, not just screen colours.
+Link each detected colour to a sound or MIDI note.
+Adjust the enclosure if the sensor distance or fit needs fixing.
+Assign one team member as the main contact with Nadia.
