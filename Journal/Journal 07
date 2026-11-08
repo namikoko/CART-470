@@ -1,0 +1,44 @@
+This week, the main discussion was about which audio will be used in the project: 
+the poem or the song. We’re still talking with Nadia about it, since the choice affects how the colours will be mapped to sound.
+A song has a melody and rhythm that could be broken into notes or sections, while a poem is spoken voice,
+so it would probably work better as separate recorded clips triggered by each colour. Either way, the decision should come from Nadia,
+because the audio is personal and connected to the meaning of the piece.
+
+Waiting on the ceramic piece
+
+We’re also trying to stay updated on the ceramic piece Nadia is going to give us. 
+We need to know whether it will be ready in time for us to do colour testing on it and connect it to the music or poem. 
+So far we’ve only tested the sensor on screen colours, so testing on the real ceramic is an important next step.
+
+If the piece isn’t ready in time, my backup plan is to make a piece myself, inspired by Nadia’s work. It wouldn’t replace hers, 
+but it would let us show a working representation of what the final installation could do. It would also give us a surface to test on, 
+so we can see how the sensor reacts to glazed, uneven ceramic.
+
+Scanner redesign
+
+The scanner casing is still being reworked so that it’s more of a cylinder shape. A cylinder should be more comfortable to hold,
+and it’s simpler and more consistent than the ridged form we tested last time.
+
+We also received Arduino Nano audio players,
+which is a big change for the project. The new version of the scanner will be wireless. 
+Instead of being connected to a laptop by USB, the scanner will need to detect the colour and play the sound on its own.
+This creates a lot of new work:
+
+Coding: rewriting the code so the colour detection triggers audio directly on the Nano instead of sending data to a computer
+Design: making the casing fit the Nano, the audio module, the sensor, and a power source, all inside a smaller cylinder shape
+Functionality: figuring out power, how the sound will be heard (speaker placement and volume),
+and making sure the sensor still sits at the right distance from the bead
+Reflection
+
+Going wireless feels like the right direction,
+because it makes the scanner feel more like a finished object and less like a tech demo plugged into a laptop.
+Visitors could hold it and move it across the tapestry freely, which fits better with the idea of the ceramic “remembering” a voice. 
+At the same time, it adds a lot of uncertainty with the final prototype deadline coming up,
+so we’ll need to test each part step by step instead of putting everything together at the end.
+
+Next steps
+Confirm with Nadia whether we’re using the poem or the song.
+Check if her ceramic piece will be ready, and start my own backup piece if it won’t be.
+Test the Arduino Nano audio players and get a sound playing from a colour reading.
+Finish the cylinder casing and make sure all the components fit.
+Test colour detection on real ceramic.
