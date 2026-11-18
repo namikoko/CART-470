@@ -1,0 +1,52 @@
+Scanner design prototypes
+
+We came up with three new design options for the scanner casing, each building on our earlier models and on Nadia’s feedback.
+
+Design prototype #1
+This design is an improved version of our initial model. It has a more rectangular shape with heavily rounded edges,
+combining elements of our original design with Nadia’s idea of referencing the look of wax cylinders. 
+Since this version is already thicker, we added a handle to make it easier to hold.
+
+Design prototype #2
+This design directly imitates the appearance of the wax cylinder that inspired Nadia’s project. 
+Because the components need to fit inside, the casing has to be more elongated so it looks clean and intentional rather than bulky. 
+We also discussed colour. The casing could stay black, or we could print it in one of the tapestry’s colours 
+so it feels like part of the art piece instead of a separate tool.
+
+Design prototype #3
+This design is also cylindrical, to replicate traditional wax cylinders.
+The base is flatter because Nadia mentioned she would prefer to hold the object by its sides rather than like a flashlight.
+To respect her original vision while accommodating this, we added a handle instead of adding grips to the sides.
+
+The wax cylinder reference is meaningful for the project. Wax cylinders were one of the first ways people recorded and preserved voices, 
+which connects directly to our question of how ceramic can “remember” a voice. 
+Having the scanner look like one makes the object part of the story, not just the technology behind it.
+
+From colour to lightness
+
+We got some beads from the studio to test with, and this changed our approach. The beads are very light in colour,
+so the differences between them were too subtle for the sensor to tell apart reliably by colour.
+Instead, we’re now scanning for the lightness of each bead. The differences in brightness are easier to detect consistently,
+which should make the scanner more reliable.
+
+This also changes how the sound will work. The song will need to be cut into sections so each one can be matched to a different level of lightness.
+When the scanner reads a bead, it will play the section that corresponds to that bead’s lightness. 
+We’ll need to decide how many lightness levels the sensor can realistically tell apart, 
+since that determines how many sections the song gets cut into.
+
+Progress and status
+We’re continuing to work with the Arduino for the sensor and audio.
+The 3D design for the new casing isn’t finished yet.
+Nadia’s ceramic piece isn’t done yet, but we’re still testing with the beads we have.
+Reflection
+
+Switching from colour to lightness felt like a setback at first, but it’s a good example of letting the material guide the design.
+Nadia’s beads are subtle and soft in tone, and instead of forcing them to fit our original plan, we adapted the system to how they actually are.
+It also simplifies things technically, which matters with the final deadline getting close.
+
+Next steps
+Choose one of the three designs with Nadia and finish the 3D model.
+Test how many lightness levels the sensor can reliably detect.
+Cut the song into sections that match those lightness levels.
+Connect the lightness readings to the audio on the Arduino.
+Keep checking on the progress of Nadia’s piece.
